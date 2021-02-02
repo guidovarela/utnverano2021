@@ -1,0 +1,63 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Selectores de etiqueta*/
+body{background: tomato;}
+h1{color:lightblue;}
+p{  color:green;
+    background:white;
+    padding:10px;
+}
+a{  color:white;
+    text-decoration: none;
+    background: red;
+}
+/*Selector de Clase*/
+.destacado{
+     color:tomato;
+     font-size:20px;
+     background: grey;
+}
+.titulo{
+    text-align:center;
+    font-size:2em;
+}
+.tercerparrafo{
+    background: gold;
+}
+/*Selectores de ID*/
+#link1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*Estructura de maquetacion*/
+/* elementos de bloque o caja
+     -> modelo de caja ->
+            margin (espaciado externo)
+            padding (espaciado interno)
+            border (borde)
+                -> lados: top / right / bottom / left
+                
+            width (ancho)
+            height (alto)
+     */
+#contenedor{
+    background: white;
+    /*para centrar contenedores, podemos usar los margenes X en forma automatica*/
+    width: 90%;/*(100% - width/2) */
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+
+    }
+
+    .cabecera{
+        border:red solid 2px;
+    }
+    .contenido{
+
+    }
+    .pie{
+        text-align: right;
+    }   
