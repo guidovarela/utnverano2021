@@ -5,15 +5,19 @@ html{
 body{
     padding:0;
     margin: 0;
+    background:gold;
 }
 
 .contenedor{
-    width:80%;
+    width:80vw;
+    height:100vh;
     margin-left:auto;
     margin-right:auto;
-    border:2px solid grey;
+    border:2px solid #c72c2c;
     /*border = border-width + border-style + border-color*/
     padding:20px;
+    /* font-size:2rem; */
+    background:rgba(255, 255, 255, 0.527);
     }
 
     .header{
