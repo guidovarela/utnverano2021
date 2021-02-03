@@ -1,0 +1,38 @@
+html{
+    font-size:16px;
+    font-family: Arial, sans-serif;
+}
+body{
+    padding:0;
+    margin: 0;
+}
+
+.contenedor{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    border:2px solid grey;
+    /*border = border-width + border-style + border-color*/
+    padding:20px;
+    }
+
+    .header{
+       text-align: center; 
+    }
+
+    .contenidos{
+        background-color: grey;
+        color:white;
+        padding:20px; /*inherit = heredado*/
+        }
+        .destacado{
+            font-weight: bold;
+        }
+
+    .footer{
+        text-align: right;
+        font-family: 'Times New Roman', Times, serif;
+        background-image: url('../img/banner.jpg'); /*url => Uniform Resource Location*/
+        height:80px;
+    }
+
