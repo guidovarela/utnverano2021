@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0}
+body{
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+}
+.content{
+	width: 60%;
+	margin: 0 auto;
+}
+.caja1,.caja2,.caja3{
+	/* border: 1px solid grey; */
+	background: lightblue;
+	width: 40%;
+}
+
+.caja1{float:left}
+.caja2{float:left}
+.caja3{float:left;width:20%}
+/*float cambia el flujo de lectura de vertical a horizontal*/
+/*si usamos float, en algun lugar hay que limpiar con clear*/
+
+.pie{
+	clear:both;
+	height:50px;
+	background: orange;
+}
