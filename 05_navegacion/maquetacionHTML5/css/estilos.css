@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*main*/
+    #mainContent{
+        width:85vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*Header*/
+    .header{
+        background: #3573d6;
+        color:white;
+        height:80px;
+        margin-bottom:10px;
+        }
+        .logo{
+            text-transform: uppercase;
+            }
+            .logo a{
+                color:white;
+                text-decoration: none;
+            }
+
+/*nav*/
+    .navbar{
+        background:rgb(13, 6, 117);
+        color:white;
+        /* padding:0.7em; */
+        }
+        /*selectores anidados
+        padre descendiente{
+            propiedades que solo modifican al hijo
+        }
+        section p{ color:green; }
+        
+        abuelo>padre>hijo{}        
+        section>p{ color:green;}
+        */
+    /* .navbar a{ color:white} */
+
+    /*Menu de Navegacion*/
+    .navbar ul{
+        list-style-type:none;
+        text-align:right;
+        /* padding:0; ya esta eliminado por el universal (*{})*/
+        }
+        .navbar ul li{
+            /*float:left;util para menus desplegables*/
+            display: inline-block ;/*no util para menus desplegables*/
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                display:block;
+                padding: 10px;
+                color:white;
+                }
+                /*pseudo-clases*/
+                .navbar ul li a:hover{
+                    background: white;
+                    color:rgb(13, 6, 117);
+                }
+
+/* #portada:hover,aside:hover{
+    background:tomato;
+} */
+        
+.limpiaFloat{clear:both}
+
+/*contenido*/
+
+        /*modelo de caja
+        el ancho real del elemento = width+padding+border
+        En html5, con la prop box-sizing:border-box, el ancho real es el width
+        */
+    
+    #portada{
+        width:78%;
+        background:rgb(78, 77, 77);
+        padding:1.6em;
+        float:left;
+        box-sizing:border-box;
+        }
+
+        /*agrupamiento de selectores*/
+        .destacado,.default{
+            background:white;
+            padding:0.7em;
+        }
+        .destacado{
+            margin-bottom:0.6em;
+        }
+        #portada .default{
+            box-sizing:border-box;
+            float:left;
+            width:50%;
+            height:350px;
+            overflow: hidden;
+        }
+
+        /*imagenes*/
+        #portada .imgNota img{
+            /*el ancho se aplica a <img>*/
+            width:100%;
+        }
+
+
+    .sidebar-der{
+        width:20%;
+        background:grey;
+        height:100px;
+        padding:20px;
+        float:right;
+        box-sizing:border-box;
+    }
+
+    .footer{
+        clear:both;
+        background:rgb(76, 169, 206);
+        color:white;
+        text-align:center;
+        padding:10px;
+        font-size: 0.8em;
+    }
+
+
+
+
+
+
+            
+    
+
+
+
+
