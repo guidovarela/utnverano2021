@@ -1,0 +1,33 @@
+
+
+Formularios
+
+<form>
+    -> action="" -> a donde mandamos la info
+    -> method="POST" -> metodo de envio / llamadas http
+    -> id=""
+
+    <input type="" name="" />
+        -> type -> define el tipo de campo necesario
+                text, email, number, password, checkbox, radio, submit, reset, etc
+        -> name -> nombre del campo / variable que va a guardar y transportar el dato
+
+    <select> -> caja de opcion o combo
+        -> name=""
+        <option value="valor">item del select</option>
+    </select>
+
+    <textarea></textarea>
+        -> area de texto
+        -> name=""
+
+
+    // Atributos HTML5
+    required -> Validacion de datos del campo que lleve ese atributo.
+    pattern="" -> permite agregar una expresion regular que mejore la validacion
+    placeholder="" -> texto auxiliar dentro del campo, que no cuenta como value=""
+    autofocus -> inserta el prompt en el campo que lleve el atributo
+
+    <label></label> -> mejorar la accesibilidad / vincula el texto del nombre del campo con ese campo
+
+</form>
