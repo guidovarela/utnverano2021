@@ -124,7 +124,6 @@ html{
         background:rgb(30, 147, 214);
         padding:1em;
     }
-
     .notasola .titulos{
         padding:0.5em;
         }
@@ -155,6 +154,54 @@ html{
     .banner-nota a img{
         width:100%
     }
+
+
+    /*Forulario Contacto*/
+
+    #formContacto{
+        padding: 1.2em;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+        margin-bottom: 2em;
+        margin-top: 1em;
+        }
+        #formContacto input, #formContacto select, #formContacto textarea{
+            width:100%;
+            padding:0.8em;
+            box-sizing: border-box;
+            margin-bottom:1em;
+            border-radius:3px;
+            border:none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:1em;
+            }
+            /* .check{ width:5% !important;} /*mala practica*/
+            /*.btn-envio{width:50% !important;} */
+
+            /*selector de etiqueta[atributo="valor"]*/
+            #formContacto input[type="checkbox"]{
+                width:auto;
+            }
+            #formContacto input[type="submit"]{
+                width:50%;
+            }
+
+            /*Pseudoclases*/
+            #formContacto input[type="submit"]:hover{
+                background:rgb(32, 32, 180);
+                color:white;
+            }
+            #formContacto input:focus{
+               background: grey; 
+            }
+            #formContacto input:valid{
+                border:1px green solid;
+            }
+            #formContacto input:invalid{
+                border:1px red solid;
+            }
+
+
 
 
     .sidebar-der{
