@@ -112,6 +112,50 @@ html{
             width:100%;
         }
 
+    /*Noticias*/
+
+    .breadcrumb{
+        padding:0.8em;
+        background:rgba(255, 255, 255, 0.5);color:white
+        }
+        .breadcrumb a{ color:white;text-decoration: none;}
+
+    .notasola{
+        background:rgb(30, 147, 214);
+        padding:1em;
+    }
+
+    .notasola .titulos{
+        padding:0.5em;
+        }
+        .notasola .titulos h2{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:2em;
+            margin-bottom:0.5em;
+        }
+        .notasola .titulos h3{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:1.5em;
+            margin-bottom:0.5em;
+        }
+
+    .notasola figure img{
+        width: 100%;
+    }
+    .notasola .textos{
+        padding:1em 0 1em 0;/*top right bottom left -> en sentido horario x*/
+        margin-bottom:2em;
+    }
+    .notasola .textos p{
+    margin-bottom:0.6em;
+    }
+    .banner-nota{
+        border:1px solid grey
+    }
+    .banner-nota a img{
+        width:100%
+    }
+
 
     .sidebar-der{
         width:20%;
