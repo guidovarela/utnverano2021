@@ -47,6 +47,63 @@
 
             <h2>Contacto</h2>
 			
+            <!-- Armar un formulario de consultas
+            Nombre y apellido
+            Email
+            localidad
+            comentario o mensaje
+            check de suscripcion al newsletter      
+            -->
+
+<form action="mailto:mail@mail.com" method="POST" id="formContacto">
+    <!-- los campos de formulario son elementos de linea -->
+    <div>
+        <label>
+            Nombre<br>
+            <input type="text" name="nombre" required>
+        </label>        
+    </div>
+
+    <div>
+        <label>
+            Email<br>
+            <input type="email" name="email" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,99})$">
+        </label>
+    </div>
+
+    <div>
+        localidad<br>
+        <select name="localidad" id="" required>
+            <option value="">Seleccione...</option>
+            <option value="caba">CABA</option>
+            <option value="lanus">Lanús</option>
+            <option value="mdq">Mar del Plata</option>
+            <option value="stafe">Santa fe</option>
+        </select>
+    </div>
+
+    <div>
+        Comentario<br>
+        <textarea name="comentario" required></textarea>
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" name="newsletter" checked value="true">
+            Quiero suscribirme al sitio y llenarme de SPAM 
+        </label>
+    </div>
+
+    <div>
+        <input type="submit" value="Escribinos!">
+    </div>
+
+
+
+
+</form>
+
+
 
             <aside class="banner-nota">
                 <a href="http://frba.utn.edu.ar">
