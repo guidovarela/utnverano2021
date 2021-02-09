@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "arial"	
+}
+#contenedor{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+.primero{
+	background: rgb(207,0,15);
+	width: 33%;
+	padding: 1%;
+	box-sizing: border-box;
+}
+.segundo{
+	background: rgb(34,167,240);
+	width: 33%;
+	padding: 1%;
+	box-sizing: border-box;
+}
+.tercero{
+	background: rgb(38,166,91);
+	width: 33%;
+	padding: 1%;
+	box-sizing: border-box;
+}
+#contenedor img{width: 100%}
+
+
