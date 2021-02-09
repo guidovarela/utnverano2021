@@ -6,26 +6,58 @@ body{
 #contenedor{
 	width: 90%;
 	margin: 0 auto;
-	display: flex;
 }
 .primero{
 	background: rgb(207,0,15);
 	width: 33%;
 	padding: 1%;
 	box-sizing: border-box;
+	float:left;
 }
 .segundo{
 	background: rgb(34,167,240);
 	width: 33%;
 	padding: 1%;
 	box-sizing: border-box;
+	float:left;
+
 }
 .tercero{
 	background: rgb(38,166,91);
 	width: 33%;
 	padding: 1%;
 	box-sizing: border-box;
+	float:left;
 }
+
+.caja{clear:both}
+
 #contenedor img{width: 100%}
+
+/*Media Queries*/
+
+/*Breakpoints*/
+/*Xlarge -> mas de 1201px*/
+
+
+/*selector de funcionalidad -> @import:url() / @keyframes*/
+
+/*Large -> 990px - 1200px */
+
+@media screen and (min-width: 990px) and (max-width:1200px){
+	body{background:tomato;}
+}
+
+/*Medium -> 660px - 989px */
+@media screen and (min-width:660px) and (max-width:989px){
+	body{background: goldenrod;}
+}
+
+
+/*Small -> 0px - 659px*/
+@media screen and (min-width:0px) and (max-width:659px){
+	body{background: green;}
+} 
+
 
 
