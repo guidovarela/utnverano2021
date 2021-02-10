@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+html{
+	font-family:arial;
+}
+
+.contenedor{
+	background-color: tomato;
+}
+.item{
+	background-color: #ccc;
+	width: 30%;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+
+
