@@ -1,0 +1,15 @@
+	display: flex;
+	/*organiza los flex-items sobre el eje principal (main-axis, o eje X)*/
+	flex-direction: row;/*default es row*/
+	/*cambia el eje principal de X a Y o viceversa*/
+	flex-wrap: wrap;/*default es nowrap*/
+	/*wrap o wrap-reverse utilizan el cross-axis (eje secundario)*/
+	/*flex-flow: row nowrap;
+	es un atajo*/
+	justify-content: space-around;
+	/*mover los items a ilo largo del eje prncipal (main-axis)*/
+	align-content: flex-end;
+	/*alinea sobre el eje secundario (cross axis)*/
+	align-items: stretch;
+	/*default es stretch*/
+	/*define la posicion sobre el eje secundario, en cada uno de los items*/
