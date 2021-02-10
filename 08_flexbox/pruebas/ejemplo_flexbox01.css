@@ -3,17 +3,42 @@ html{
 	font-family:arial;
 }
 
+/*flex-container*/
 .contenedor{
+	width:90%;
+	height:600px;
+	margin:0 auto;
 	background-color: tomato;
-}
-.item{
-	background-color: #ccc;
-	width: 30%;
-	margin-bottom: 10px;
-	text-align: center;
-	line-height: 75px;
-	font-size: 30px;
-}
+	/*Dispara el sistema*/
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	/*flex-flow: row wrap;*/
+
+	/*ordenamiento sobre el eje principal (X)*/
+	justify-content:space-around;
+	/*ordenamiento sobre el eje secundario (Y)*/
+	/*cuando aplicamos el sistema Flex, todos los flex-items toman el alto maximo*/
+	align-items:baseline;
+	align-content:space-around;
+
+
+	}
+	/*flex-item*/
+	.item{
+		background-color: #ccc;
+		width: 30%;
+		/* margin-bottom: 10px; */
+		text-align: center;
+		/* line-height: 75px; */
+		font-size: 30px;
+	}
+	.maradona{
+		order:2;
+	}
+	.messi{
+		order:5;
+	}
 
 
 

@@ -22,17 +22,29 @@
 			padding: 20px;
 			text-align: center; 
 		}
-		main, aside {
-			margin: 10px;
+		/*flex-container*/
+		.contenedor-flex{
+			display:flex;
+			align-items:baseline;
+			justify-content:space-between;
 		}
+
+		/*items*/
+		
 		main {
 			width: 380px; 
+			order:0;
 		}
 		.lateral-1 { 
 			width: 230px; 
+			order:-1;
+			background:tomato;
+			align-self:center;
 		}
 		.lateral-2 { 
+			background:tomato;
 			width: 230px;
+			order:1;
 		}
 		
 		
