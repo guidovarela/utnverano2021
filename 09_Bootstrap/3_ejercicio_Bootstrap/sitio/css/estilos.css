@@ -9,19 +9,3 @@
 .bg8{background: #34495e}
 .bg9{background: #f1c40f}
 .bg10{background: #f39c12}
-
-.head2{
-    height: 40px;   
-}
-.nuevoSlider{
-    /* height: 400px;
-    background: linear-gradient(#8e44ad,#34495e); */
-    font-family: 'impact';
-}
-
-/*Navbar*/
-
-#navbarNav .enlaces:hover{
-    background:white;
-    color:#16a085;
-}
