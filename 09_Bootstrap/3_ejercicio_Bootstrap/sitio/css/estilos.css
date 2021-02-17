@@ -1,5 +1,8 @@
 *{margin: 0;padding:0}
 
+/*Reglas-At*/
+@import url("artesanal.css");
+
 .bg1{background: #16a085 }
 .bg2{background: #27ae60}
 .bg3{background: #2980b9}
@@ -24,3 +27,15 @@
 .banner1{
     height:100px;
 }
+
+.menuHeader li a:hover{
+    background: rgba(255, 255, 255, 0.308);
+    color: rgb(13, 109, 61);
+    text-decoration: underline;
+}
+
+.links:hover{
+    background: blueviolet;
+    color: tomato;
+}
+

@@ -1,0 +1,62 @@
+MySQL
+
+todas la peticiones se realizan mediante el protocolo HTTP
+Las consultas, se hacen con sintaxis SQL, SOLO las realiza el servidor
+
+Consultas   -> pedidos a la bbdd
+            -> siempre tienen respuesta (el servidor MySQL la devuelve)
+
+1)  Creamos la bbdd
+    CREATE DATABASE nombreBBDD
+    TRUNCATE DATABASE nombre
+
+    2)  Primero pensamos la estructura y luego Creamos la tabla
+        CREATE TABLE nombreTabla ("nombreColumna" tipoDeDato(limiteCaracteres),...)
+
+        3) 
+        - Cargar Datos -> 1 registro
+        INSERT INTO nombreTabla VALUES (valor1, valor2, valor3,...)
+        -> orden de valores = orden columnas
+
+        - Borrar Datos -> borra registros (filas)
+        DELETE * FROM nombreTabla (borra todos los registros)
+        DELETE FROM nombreTabla WHERE id = 56
+        DELETE FROM nombreTabla WHERE nombre = "Pablo"
+
+        - Actualizar Datos -> modifica uno o varios campos
+        UPDATE nombreTabla SET campo=valorAmodificar WHERE campo=valor
+
+        UPDATE Sueldos SET Importe=1999.99 WHERE categoria = "saldo"
+
+        - Buscar datos (y ver la devolucion)
+        SELECT columna1, columna2 FROM nombreTabla 
+        SELECT * FROM nombreTabla 
+        
+        SELECT nombre, apellido, email FROM nombreTabla WHERE id = 38 
+
+        SELECT nombre, apellido, email FROM nombreTabla WHERE nombre = "pablo" AND apellido = "Martinez" 
+        
+        operadores
+        AND / OR / NOT / = > >= < ...
+
+        SELECT nombre, apellido, email FROM nombreTabla WHERE edad > 17
+        
+        SELECT nombre, apellido, email FROM nombreTabla WHERE edad BETWEEN 17 AND 50
+        
+        SELECT nombre, apellido, email FROM nombreTabla WHERE
+        apellido LIKE "%a%"
+
+            - Funciones -> valores maximos, minimos, promerio, conteo, sumatoria, etc
+
+            SELECT count(id) FROM nombreTabla 
+            SELECT max(salario) FROM nombreTabla 
+            SELECT min(salario) FROM nombreTabla 
+
+
+
+
+
+EN MYSQL NO HAY CTRL+Z
+
+ABM / Altas - Bajas - Modificaciones
+CRUD / Create - Read - Update - Delete
