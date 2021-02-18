@@ -1,0 +1,30 @@
+
+Servidor Local (localhost)
+    -> XAMPP
+    -> Wamp Server
+    -> Mamp (mac)
+
+Ecosistema del server:
+navegador -> http request -> host (apache)
+                            PhpMyAdmin -> consulta -> MySQL
+
+navegador -> http request <- host (apache) -> respuesta <- MySQL
+
+    Emulador del hosting en la nube, pero en nuestra maquina.
+    -> Servidor Apache
+        -> Modulo PHP
+        -> Modulo MySQL
+            -> la administracion de la base de datos se hace con PhpMyAdmin
+            -> http://localhost/phpmyadmin
+            -> http://127.0.0.1/phpmyadmin
+
+            -> Requiere acceso (usuario + password)
+                user Mysql: root
+                pass MySQL: (vacío)
+    
+    Servidor MySQL
+
+    1) creamos Base datos
+        2) creamos tabla
+            3) insertamos datos
+                4) hacemos consultas con esos datos
