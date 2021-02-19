@@ -1,0 +1,21 @@
+1- SELECT nombre, trabajo FROM empleado
+2- SELECT nombre, edad FROM empleado
+3- SELECT nombre, edad FROM empleado WHERE trabajo='Programador'
+4- SELECT nombre, edad FROM empleado WHERE edad>30
+5- SELECT apellido, email FROM empleado WHERE nombre="Juan"
+6- SELECT nombre FROM empleado WHERE trabajo="Programador" OR trabajo="Desarrollador web"
+7- SELECT id_emp, nombre, apellido, trabajo FROM empleado WHERE id_emp BETWEEN 15 AND 20
+
+	select id_emp, nombre, apellido, trabajo 	from empleado where id_emp>=15 and 	id_emp <=20
+
+8- SELECT nombre, apellido FROM empleado WHERE trabajo="Programador" AND salario<800
+9- SELECT nombre, apellido FROM empleado WHERE trabajo="Programador" AND salario BETWEEN 750 AND 900
+10- SELECT nombre, apellido FROM empleado WHERE apellido LIKE "S%"
+
+11- SELECT nombre, apellido FROM empleado WHERE nombre LIKE "%L"
+
+12- INSERT INTO empleado VALUES (22, "Francisco", "Perez", "Programador", 26, 900, "francisco@bignet.com")
+
+13- DELETE FROM empleado WHERE nombre="Hernan" AND apellido="Rosso"
+
+14- UPDATE empleado SET salario=900 WHERE nombre="Daniel" AND apellido="Gutierrez"
