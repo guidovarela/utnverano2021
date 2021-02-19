@@ -29,7 +29,7 @@ Consultas   -> pedidos a la bbdd
         UPDATE Sueldos SET Importe=1999.99 WHERE categoria = "saldo"
 
         - Buscar datos (y ver la devolucion)
-        SELECT columna1, columna2 FROM nombreTabla 
+        SELECT columna1, columna2 FROM nombreTabla WHERE campo operador valor
         SELECT * FROM nombreTabla 
         
         SELECT nombre, apellido, email FROM nombreTabla WHERE id = 38 
