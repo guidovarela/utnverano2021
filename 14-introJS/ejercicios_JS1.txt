@@ -1,0 +1,13 @@
+
+1.
+ a. Definir dos constantes (variables) llamadas usuario y password y asignar el valor administrador y 1234 respectivamente
+ b. Preguntar al usuario que ingresa al sitio a trav�s de dos prompts el usuario y la contrase�a del sistema
+ c. Si el usuario y la contrase�a coinciden con las del sistema (variable usuario y password) mostrar en el navegador un mensaje de bienvenida
+ d. Si no coinciden mostrar usuario o contrase�a incorrectos
+
+2. Permitir al usuario ingresar 3 numeros dentro de la plataforma. Mostrar (por consola) una vez terminado el proceso cual es el mayor y cual el menor.
+
+
+3. Definir una variable del tipo cadena cuyo contenido sea �Hola Mundo�.
+Cuando el usuario presiona un bot�n �Mostrar mensaje�, hacer que se muestre el contenido de la variable por consola.
+
