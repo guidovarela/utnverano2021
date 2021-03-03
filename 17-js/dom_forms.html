@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<body>
+    
+    <h1>DOM y formularios</h1>
+
+    <form action="" onsubmit="return false" >
+        <div>
+            <input type="text" name="usuario" id="user" placeholder="Usuario">
+        </div>
+        <div>
+            <input type="password" name="clave" id="pass1" placeholder="Password">
+        </div>
+        <div>
+            <input type="password" name="clave" id="pass2" placeholder="Confimar Password">
+        </div>
+        <input type="button" value="log in" onclick="validacionPass()">
+    </form>
+
+        <div id="resultado"></div>
+
+    <script>
+
+        //Validar password
+        
+        //Ubicamos los campos
+        let campoUser = document.getElementById('user')
+        let campoPass1 = document.getElementById('pass1')
+        let campoPass2 = document.getElementById('pass2')
+        // console.log(campoUser.value)
+        // console.log(campoPass1.value)
+        // console.log(campoPass2.value)
+
+        function validacionPass(e){
+
+            // e.preventDefault()
+
+            if( campoPass1.value === campoPass2.value ){
+                document.getElementById('resultado').innerHTML = "Los passwords son iguales !"
+                // return true
+            }else{
+                document.getElementById('resultado').innerHTML = "Error, las claves deben ser iguales"
+                // return false
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

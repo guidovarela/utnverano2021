@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM JS</title>
+    </head>
+    <body>
+      
+        <div>
+            <h1>DOM</h1>
+            <p>
+                El Modelo de Objetos del Documento (DOM) es un API para documentos HTML y XML. Proporciona una representación estructural del documento, permitiendo la modificación de su contenido o su presentación visual. Esencialmente, comunica las páginas web con los scripts o los lenguajes de programación.
+            </p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum rerum ullam aut, voluptates assumenda praesentium quam quidem facere ducimus hic nesciunt, inventore tenetur doloremque consequuntur at nostrum suscipit quos.</p>
+
+        <div id="saludo"></div>
+
+        <button onclick="saludar()">Saludar</button>
+        <button onclick="borrar()">borrar</button>
+
+        <script>
+
+            let nombre = "Guido"
+            let saludo = `Hola ${nombre}`
+            // document.write(saludo)
+
+            console.log(document.body.children)
+
+            //getElementById()
+
+//Javascript es un lenguaje Case-sensitive
+/* sintaxis de formato: 
+    camel-case                      -> getElementById
+    Upper-camel-case o Pascal       -> NuevoUsuario
+    
+    snake-case                      -> alta_nuevo_usuario
+    kebak case                      -> border-color
+*/
+
+/*Ambito de las variables 
+            -> Local -> se utiliza en un ambito cerrado (dentro de una funcion)
+            -> Global -> ambito es abierto
+
+*/
+let caja = document.getElementById('saludo')
+
+            function saludar(){
+                console.log(saludo)//variable global
+                
+                saludo = "Chau "+nombre //variable local
+                
+                caja.innerHTML = saludo
+                //background-color
+                //padding
+                //border
+                caja.style.backgroundColor = "tomato"
+                caja.style.padding = "10px"
+                caja.style.border = "2px solid grey"
+                caja.style.borderRadius = "5px"
+            }
+            function borrar(){
+                caja.innerHTML = ""
+            }
+            
+            
+            console.log(saludo)// variable global
+
+
+        </script>
+
+    </body>
+</html>
