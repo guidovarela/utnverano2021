@@ -25,6 +25,75 @@
          
       
 
+    <script>
+
+      //variables
+      let nombre = "Guido"
+      let apellido = "Varela"
+
+      //array
+      let usuario1 = ["Guido","Varela",40,false]
+
+      if(usuario1[3] === false){
+        mascota = "no tengo"
+      }else{
+        mascota = "tengo"
+      }
+
+      console.log("Mi nombre es " + usuario1[0]+ " " + usuario1[1] + ", tengo "+usuario1[2]+" años."+ "Mascotas: "+mascota)
+      
+      //template strings o template literals
+      //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals
+      console.log(`Mi nombre es ${usuario1[0]} ${usuario1[1]}, tengo ${usuario1[2]} años. Mascotas: ${mascota}`)
+
+
+
+      let semana = ["Lunes","martes","miercoles","jueves","viernes","sabado"]
+      console.log(`Los dias de la semana son ${semana.length}`)//lenght -> cantidad de indices del array
+
+      //push -> agregar datos
+      let agregar1 = semana.push("domingo")
+
+      //pop -> eliminar el ultimo indice
+      // let eliminar1 = semana.pop()
+
+      //shift -> elimina el 1ero
+      // let agregar2 = semana.shift()
+
+      // let filtrar1 = semana.slice(2,2)
+
+      let personas = [] //array vacio
+
+      personas.push("Maria")
+      personas.push("Marcelo")
+      personas.push("Jose")
+
+      let invertir1 = semana.reverse()
+      
+      let mezclar1 = semana.sort()
+
+
+      //Mostrar en pantalla los dias de la semana
+
+      // document.write(semana[0]+"<hr>")
+      // document.write(semana[1]+"<hr>")
+      // document.write(semana[2]+"<hr>")
+      // document.write(semana[3]+"<hr>")
+      // document.write(semana[4]+"<hr>")
+
+      //Mostrar en pantalla los dias de la semana
+      semana = ["Lunes","martes","miercoles","jueves","viernes","sabado","domingo","osvaldo"]
+
+      let cantindices = semana.length
+
+      for(i=0 ; i < cantindices ; i+=1 ){
+        document.write(semana[i]+"<hr>")
+      }
+      
+
+
+
+
     </script>
       
     <!-- Optional JavaScript -->
