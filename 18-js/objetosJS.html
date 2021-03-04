@@ -26,6 +26,99 @@
             </code>
         </p>
 
+
+        <script>
+
+          const persona1 = [
+            "Guido",
+            "Varela",
+            40,
+            "Argentina"
+          ]
+          const persona2 = [
+            "Maria",
+            "Gomez",
+            25,
+            "Chile"
+          ]
+
+          console.log(persona1[0]+persona1[1])
+          console.log(persona2[0]+persona2[1])
+
+          //Objetos Literales
+
+          /*
+          var objeto = { propiedad: valor, }
+
+          objeto.metodo / objeto.@
+
+          */
+
+          const usuario1 = {
+            nombre:"Marcelo",
+            apellido:"Tinelli",
+            edad: 50,
+            nacionalidad: "Argentina",
+            hijos : [
+              'Maria','Francisco','Laura'
+            ],
+            saludo: function saludar(){
+              alert(`Hola, soy ${this.nombre}`)
+            }
+          }
+          //Imprmir -> mostrar en pantalla
+          document.write(`Hola mi nombre es ${usuario1.nombre} ${usuario1.apellido}, tengo ${usuario1.edad} años, soy de ${usuario1.nacionalidad}.<br> Hijos: `)
+
+          for (let i = 0; i < usuario1.hijos.length; i++) {
+              document.write(usuario1.hijos[i]+" ")
+            
+          }
+          // usuario1.saludo()
+
+          //Array de objetos
+
+          let monedas = [
+            {
+              nombre: "Peso",
+              denom: "$",
+              procedencia: "Argentina",
+            },
+            {
+              nombre:"Sol",
+              denom:"S",
+              procedencia:"Peru"
+            },
+            {
+              nombre: "dolar US",
+              denom: "U$S",
+              procedencia: "EEUU"
+            }
+          ]
+
+           //Jason != JSON -> Javascript Object Notation
+           // MongoDB -> Base de datos Orientada a objetos
+
+
+          document.write(monedas[2].nombre)
+
+          //Agregar una nueva moneda
+
+            let monedasAgregar1 = {
+              nombre:'Real',denom:'R',procedencia:"Brasil"
+            }
+            let monedasAgregar2 = {
+              nombre:"Libra",denom:"L",procedencia:"Gran Bretaña"
+            }
+
+          monedas.push(monedasAgregar1)
+          monedas.push(monedasAgregar2)
+
+          for (let i = 0; i < monedas.length; i++) {
+            document.write(`Moneda: ${monedas[i].nombre}, Denominacion: ${monedas[i].denom}, Procedencia: ${monedas[i].procedencia} <hr>`)
+          }
+
+
+        </script>
         
     </div>
 
