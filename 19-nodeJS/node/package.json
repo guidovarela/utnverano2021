@@ -1,0 +1,19 @@
+{
+  "name": "pruebasnodejs",
+  "version": "1.0.0",
+  "description": "proyecto de prueba de NodeJS, para UTN FRBA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utn",
+    "nodejs",
+    "frontend"
+  ],
+  "author": "Guido Varela",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
