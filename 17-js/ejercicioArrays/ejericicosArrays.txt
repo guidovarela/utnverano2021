@@ -1,0 +1,12 @@
+    Declara un array que vamos a llamar «clasificaciones» con los siguientes valores:
+    Ana, Pedro, Mariano, Clara, Axel, Anton
+    (vamos a suponer que es el orden de clasificación de un concurso, en un momento dado)
+    Imprime la clasificación actual
+
+El concurso continua, y se van modifican esas posiciones anteriores. Debemos cambiar en el array:
+
+    Clara adelanta a Mariano
+    Anton es descalificado y se elimina del concurso
+    Detrás de Ana y antes de Pedro se clasifican dos nuevos concursantes: Roberto y Analia, en ese orden
+    Hay una nueva participante que pasa a encabezar la clasificación: Marcela
+    Imprime la clasificación actualizada y comprueba que se ha hecho correctamente
