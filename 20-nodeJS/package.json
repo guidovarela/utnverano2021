@@ -1,0 +1,19 @@
+{
+  "name": "proyectonode",
+  "version": "1.0.0",
+  "description": "Proyecto del curso de UTN 2021 - NodeJS, MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utn",
+    "frontend",
+    "virtualidad"
+  ],
+  "author": "Guido Varela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
