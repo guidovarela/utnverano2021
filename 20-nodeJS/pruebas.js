@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 //Contacto
 // app.get('ruta',callback())
 app.get('/contacto',function(req,res){
-    res.send('Esto es el contacto!')
+    res.send('Esto es el contacto! actualizando!')
 }) //(request, response, next)
 
 app.get('/data',function(req,res){

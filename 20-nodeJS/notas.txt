@@ -1,0 +1,36 @@
+
+
+MVC -> Modelo Vista Controlador / Model-View-Controller
+
+express-generator
+1) express --view=hbs nuevaCarpeta -> Genera un proyecto con template engine (sistema de vistas)
+
+//Archivos publicos al proyecto -> imagenes/ css / .js / fonts
+// <img='images/recurso.jpg'>
+public\images\
+public\stylesheets\
+public\stylesheets\style.css
+
+//Rutas -> definimos las secciones -> Modelo (datos)
+routes\
+routes\index.js
+routes\users.js
+
+//Vistas -> los archivos .html (.hbs) que se van a renderizar por cada ruta
+views\
+views\error.hbs
+views\index.hbs
+views\layout.hbs
+
+//Nucleo de la app web -> Controller
+app.js
+
+//Descripcion del proyecto -> Dependencias
+package.json
+
+//Compila el proyecto hacia el navegador
+bin\
+bin\www
+
+2) Instalar dependencias -> npm install
+3) Run the app -> npm start -> node ./bin/www
