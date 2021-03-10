@@ -1,0 +1,17 @@
+//Rutas en Node -> Routing
+
+index
+    |_ Home
+    |_ Usuarios
+    |_ Contacto
+
+app.js
+1) Definir la ruta en app.js
+                -> rutaRouter = require()
+2) Definir el nombre de la ruta
+
+3) crear la ruta -> ./routes/ruta.js
+    -> importar express + Router()
+    -> Exportar la ruta
+
+4) Renderizar la vista correspondiente (.hbs)
