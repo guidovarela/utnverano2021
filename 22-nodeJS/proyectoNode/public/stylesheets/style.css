@@ -1,0 +1,20 @@
+body {
+  margin:0;padding:0;
+}
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.bg1{
+  background: linear-gradient(rgb(23, 78, 195), white);
+}
+
+.card-prod{
+  /* background-color: rgb(240, 134, 63) !important; */
+  color:white;
+  transition: 1s;
+  }
+  .card-prod:hover{
+    background: rgba(240, 134, 63, 0.472) !important;
+  }
