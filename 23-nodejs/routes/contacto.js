@@ -42,7 +42,7 @@ router.post('/', function(req,res) {
                     secure: true, // true for 465, false for other ports
                     auth: {
                       user: "guido.varela@gmail.com",
-                      pass: "liaorncfljosccwx", // En Gmail, debemos crear una contraseña de aplicaciones
+                      pass: "xxxxxxxxxxxxxxxxxx", // En Gmail, debemos crear una contraseña de aplicaciones
                       //https://support.google.com/accounts/answer/185833
                     },
                   });
