@@ -1,0 +1,31 @@
+
+<div class="container mt-5">
+    <h1>{{title}}</h1>
+    <hr>
+    <div class="row">
+        <div class="col-8">
+            
+            <form action="" method="post">
+                <div class="mb-2">
+                    <input class="form-control" type="text" name="nombre" id="" placeholder="Nombre" value="{{nombreForm}}">
+                </div>
+                <div class="mb-2">
+                    <input class="form-control" type="email" name="email" id="" placeholder="Email" value="{{emailForm}}">
+                </div>
+                <div class="mb-2">
+                    <input class="form-control" type="Localidad" name="localidad" id="" placeholder="Localidad" value="{{localidadForm}}">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </div>
+            </form>
+
+            <div class="validacion">
+               <p class="text-danger">
+                   {{validacion}}
+               </p> 
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

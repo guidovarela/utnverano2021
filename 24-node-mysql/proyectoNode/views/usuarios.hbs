@@ -1,0 +1,26 @@
+<div class="container">
+
+
+    <div class="row">
+        {{!-- Recorrer un array -> foreach -> #each --}}
+        {{#each users}}
+        <div class="col-4 mt-3">
+            <div class="bg-dark text-white p-4">
+                <span class="h2">
+                    {{nombre}} {{apellido}} <br>
+                </span>
+                {{edad}} <br>
+                
+                {{#if redes}}
+                    {{redes}}
+                    {{else}}
+                    (no tiene)
+                {{/if}}
+                <p>
+                    {{{frase}}}
+                </p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
