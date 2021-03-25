@@ -1,0 +1,54 @@
+
+<div class="container-fluid bg-secondary p-2 mb-5 text-white fw-bold">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb  ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <a class="text-white" href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="text-white" href="/productos">Productos</a>
+            </li>
+            <li class="breadcrumb-item">
+                {{producto.categoria}}
+            </li>
+        </ol>
+    </nav>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <a data-fancybox="galeriaProd" href="/images/{{producto.imagen}}">
+                <img src="/images/{{producto.imagen}}" class="img-fluid w-100" alt="">
+            </a>
+
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5">
+            <h2>{{producto.nombre}}</h2>
+            <hr>
+            <p>{{producto.descripcion}}</p>
+            <hr>
+            <h3 class="bg-success">$ {{producto.precio}}.-</h3>
+
+            {{#if producto.stock}}
+                <span class="badge bg-success">Disponible: {{producto.stock}}</span>
+                <button class="btn btn-primary"> Comprar</button>
+            {{else}}
+                <span class="badge bg-danger">Sin stock</span>
+                <button class="btn btn-primary" disabled="disabled">Comprar</button>    
+            {{/if}}
+        </div>
+
+    </div>
+
+    <div class="alert alert-success">
+        {{legales}}
+    </div>
+    <div class="alert alert-success">
+        {{envios}}
+    </div>
+
+</div>
